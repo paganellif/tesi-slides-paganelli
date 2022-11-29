@@ -1,6 +1,7 @@
 \documentclass[10pt]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{ragged2e}
 \usepackage{listings}
 \usepackage{minted}
 \usepackage{multicol}
@@ -52,6 +53,7 @@
   frame=lines
 }
 
+\beamertemplatenavigationsymbolsempty
 %------------------------------------------------------------
 %\titlegraphic{\includegraphics[height=1.5cm]{download.png}} 
 
@@ -62,10 +64,30 @@
 \setbeamerfont{institute}{size=\small}
 \title[]{DevOps per Applicazioni Mobile Multipiattaforma: un Caso di Studio Industriale}
 
-\institute[]{Alma Mater Studiorum - Università di Bologna \\ Campus di Cesena}
-\author[Filippo Paganelli]{Filippo Paganelli \\ filippo.paganelli3@studio.unibo.it}
-\date[\textcolor{white}{A.A. 21/22} ]
-{A.A. 21/22 \\ III Sessione}
+\institute[]{}
+\author[Filippo Paganelli]{Alma Mater Studiorum - Università di Bologna \\ Campus di Cesena}
+\date[\textcolor{white}{A.A. 21/22}]
+{
+\begin{columns}[onlytextwidth]
+    \begin{column}{0.5\textwidth}
+        \begin{flushleft}
+            Relatore:\\
+            \textbf{Prof. Danilo Pianini}\\
+            \vspace{3mm}
+            Correlatore:\\
+            \textbf{Prof.ssa Catia Prandi}
+        \end{flushleft}
+    \end{column}
+        \begin{column}{0.5\textwidth}
+        \begin{flushright}
+            Presentata da:\\
+            \textbf{Filippo Paganelli}
+        \end{flushright}
+    \end{column}
+\end{columns}
+\vspace{10mm}
+A.A. 21/22 \\ III Sessione
+}
 
 %------------------------------------------------------------
 %This block of commands puts the table of contents at the 
@@ -94,15 +116,22 @@
 
 %The next statement creates the title page.
 \frame{\titlepage}
-\begin{frame}
-\frametitle{Contents}
-\tableofcontents
-\end{frame}
+%\begin{frame}
+%\frametitle{Contents}
+%\tableofcontents
+%\end{frame}
 %------------------------------------------------------------
 
-%\input{sections/overview.tex}
+\input{sections/introduzione.tex}
+\input{sections/caso-di-studio.tex}
+\input{sections/cicd.tex}
+\input{sections/sviluppo-applicazione.tex}
+\input{sections/conclusioni.tex}
 
-%\input{sections/cicd.tex}
+\begin{frame}
+    \begin{center}
+        \LARGE Grazie dell'attenzione
+    \end{center}
+\end{frame}
 
-%\input{sections/maggioliebook.tex}
 \end{document}
