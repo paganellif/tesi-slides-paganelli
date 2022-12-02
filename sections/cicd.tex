@@ -33,13 +33,8 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Sistema Obiettivo}
-    \begin{figure}[H]
-        \includegraphics[width=0.89\textwidth]{img/full-cicd.png}
-    \end{figure}
-\end{frame}
-
 \begin{frame}{Continuous Integration/Delivery}
+    \vspace{3mm}
     \begin{columns}[onlytextwidth]
         \begin{column}{0.45\textwidth}
             \textbf{Continuous Integration}
@@ -70,8 +65,36 @@
             \end{itemize}
         \end{column}
     \end{columns}
+    \begin{figure}[H]
+        \includegraphics[width=1\textwidth]{img/ci-cd-pipeline.png}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Continuous Inspection}
-    
+        \begin{columns}[onlytextwidth]
+        \begin{column}{0.45\textwidth}
+            \textbf{Continuous Inspection}
+            \vspace{2mm}
+            \begin{itemize}
+                \item \textbf{Principio}: Analisi automatica del codice per garantire un certo livello di qualità e di sicurezza
+                \vspace{2mm}
+                \item \textbf{Stages}:
+                \begin{itemize}
+                    \item SAST (Static Application Security Testing)
+                    \item SCA (Software Composition Analysis)
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}[H]
+                \includegraphics[width=1\textwidth]{img/sonar-screenshot.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Sistema Obiettivo}
+    \begin{figure}[H]
+        \includegraphics[width=0.89\textwidth]{img/full-cicd.png}
+    \end{figure}
 \end{frame}
