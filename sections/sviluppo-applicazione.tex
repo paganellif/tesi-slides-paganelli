@@ -32,10 +32,17 @@
 \begin{frame}{Logica Applicativa}
     \begin{columns}[onlytextwidth]
         \begin{column}{0.4\textwidth}
-            \textbf{Strategie}:
+            \textbf{Librerie di terze parti con supporto multipiattaforma}:
             \begin{itemize}
-                \item Librerie di terze parti con supporto multipiattaforma
-                \item Meccanismo ``expect/actual''
+                \item Network (Ktor)
+                \item Persistenza dati (SqlDelight, Kvault)
+                \item Logging (Napier)
+                \item Dependency injection (Koin)
+            \end{itemize}
+            \vspace{5mm}
+            \textbf{Meccanismo expect-actual}:
+            \begin{itemize}
+                \item Computazione asincrona
             \end{itemize}
         \end{column}
         \begin{column}{0.6\textwidth}
@@ -50,7 +57,15 @@
     % citare readium kotlin
     \begin{columns}[onlytextwidth]
         \begin{column}{0.4\textwidth}
-
+            \textbf{Librerie}:
+            \begin{itemize}
+                \item shared (modulo condiviso)
+                \item Readium (Kotlin-toolkit)
+            \end{itemize}
+            \vspace{2mm}
+            \textbf{Architettura}: Single-Activity\\
+            \vspace{3mm}
+            \textbf{Integrazione}: Semplice
         \end{column}
         \begin{column}{0.6\textwidth}
              \begin{figure}[H]
@@ -90,7 +105,20 @@
     % citare readium swift
     \begin{columns}[onlytextwidth]
         \begin{column}{0.4\textwidth}
-
+            \textbf{Librerie}:
+            \begin{itemize}
+                \item shared (modulo condiviso)
+                \item Readium (Swift-toolkit)
+            \end{itemize}
+            \vspace{2mm}
+            \textbf{Architettura}: Navigator\\
+            \vspace{2mm}
+            \textbf{Integrazione}: Complessa
+            \begin{itemize}
+                \item Computazione asincrona
+                \item Tipi di dato
+                \item Dati binari
+            \end{itemize}
         \end{column}
         \begin{column}{0.6\textwidth}
              \begin{figure}[H]
