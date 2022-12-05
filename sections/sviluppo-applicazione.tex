@@ -2,36 +2,10 @@
 
 \section{Sviluppo Applicazione}
 
-\begin{frame}{Processo di Sviluppo}
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.4\textwidth}
-            \textbf{Progettazione}:
-            \begin{itemize}
-                \item Modellazione dominio (editoria digitale)
-                \item Progettazione UX/UI
-                \item Definizione architettura
-            \end{itemize}
-            \vspace{3mm}
-            \textbf{Implementazione}:
-            \begin{itemize}
-                \item Ricerca Librerie
-                \item Configurazione utilizzo sistema di automazione
-                \item Sviluppo logica applicativa (modulo condiviso)
-                \item Sviluppo UI Android
-                \item Sviluppo UI iOS
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.6\textwidth}
-             \begin{figure}[H]
-                \includegraphics[width=1\textwidth]{img/stack_kmm.png}
-            \end{figure}
-        \end{column}
-    \end{columns}
-\end{frame}
-
 \begin{frame}{Logica Applicativa}
     \begin{columns}[onlytextwidth]
         \begin{column}{0.4\textwidth}
+        
             \textbf{Librerie di terze parti con supporto multipiattaforma}:
             \begin{itemize}
                 \item Network (Ktor)
@@ -39,117 +13,87 @@
                 \item Logging (Napier)
                 \item Dependency injection (Koin)
             \end{itemize}
+            
             \vspace{5mm}
+            
             \textbf{Meccanismo expect-actual}:
             \begin{itemize}
                 \item Computazione asincrona
             \end{itemize}
+            
         \end{column}
         \begin{column}{0.6\textwidth}
+        
              \begin{figure}[H]
-                \includegraphics[width=1\textwidth]{img/stack_kmm_shared.png}
+                \includegraphics[width=1\textwidth]{img/stack_kmm.png}
             \end{figure}
+            
         \end{column}
     \end{columns}
 \end{frame}
 
 \begin{frame}{UI Android}
-    % citare readium kotlin
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.4\textwidth}
-            \textbf{Librerie}:
-            \begin{itemize}
-                \item shared (modulo condiviso)
-                \item Readium (Kotlin-toolkit)
-            \end{itemize}
-            \vspace{2mm}
-            \textbf{Architettura}: Single-Activity\\
-            \vspace{3mm}
-            \textbf{Integrazione}: Semplice
-        \end{column}
-        \begin{column}{0.6\textwidth}
-             \begin{figure}[H]
-                \includegraphics[width=1\textwidth]{img/stack_kmm_android.png}
-            \end{figure}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-\begin{frame}{UI Android}
-    % citare readium kotlin
     \begin{columns}[onlytextwidth]
         \begin{column}{0.24\textwidth}
+        
              \begin{figure}[H]
                 \includegraphics[width=1\textwidth]{img/login.png}
             \end{figure}
+            
         \end{column}
         \begin{column}{0.24\textwidth}
+        
              \begin{figure}[H]
                 \includegraphics[width=1\textwidth]{img/home.png}
             \end{figure}
+            
         \end{column}
         \begin{column}{0.24\textwidth}
+        
              \begin{figure}[H]
                 \includegraphics[width=1\textwidth]{img/sidenav.png}
             \end{figure}
+            
         \end{column}
         \begin{column}{0.24\textwidth}
+        
              \begin{figure}[H]
                 \includegraphics[width=1\textwidth]{img/reader_settings.png}
             \end{figure}
+            
         \end{column}
     \end{columns}
 \end{frame}
 
 \begin{frame}{UI iOS}
-    % citare readium swift
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.4\textwidth}
-            \textbf{Librerie}:
-            \begin{itemize}
-                \item shared (modulo condiviso)
-                \item Readium (Swift-toolkit)
-            \end{itemize}
-            \vspace{2mm}
-            \textbf{Architettura}: Navigator\\
-            \vspace{2mm}
-            \textbf{Integrazione}: Complessa
-            \begin{itemize}
-                \item Computazione asincrona
-                \item Tipi di dato
-                \item Dati binari
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.6\textwidth}
-             \begin{figure}[H]
-                \includegraphics[width=1\textwidth]{img/stack_kmm_ios.png}
-            \end{figure}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-\begin{frame}{UI iOS}
-    % citare readium kotlin
     \begin{columns}[onlytextwidth]
         \begin{column}{0.24\textwidth}
+        
              \begin{figure}[H]
                 \includegraphics[width=1\textwidth]{img/login_ios.png}
             \end{figure}
+            
         \end{column}
         \begin{column}{0.24\textwidth}
+        
              \begin{figure}[H]
                 \includegraphics[width=1\textwidth]{img/home_ios.png}
             \end{figure}
+            
         \end{column}
         \begin{column}{0.24\textwidth}
+        
              \begin{figure}[H]
                 \includegraphics[width=1\textwidth]{img/sidenav_ios.png}
             \end{figure}
+            
         \end{column}
         \begin{column}{0.24\textwidth}
+        
              \begin{figure}[H]
                 \includegraphics[width=1\textwidth]{img/reader_settings_ios.png}
             \end{figure}
+            
         \end{column}
     \end{columns}
 \end{frame}
