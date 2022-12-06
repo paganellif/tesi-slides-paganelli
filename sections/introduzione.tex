@@ -3,120 +3,87 @@
 \section{Introduzione}
 
 \begin{frame}{Introduzione}
-    \begin{columns}[onlytextwidth,t]
-        \begin{column}{0.5\textwidth}
-        
+    \begin{columns}[onlytextwidth]
+            \begin{column}{0.5\textwidth}
+            
+            \textbf{Mercato delle applicazioni mobile}:
+            \begin{itemize}
+                \item Grande crescita
+                \item Grande concorrenza
+                \item Cambiamenti molto rapidi
+                \item Due leader (Android e iOS)
+            \end{itemize}
+    
+            \vspace{3mm}
+    
             \textbf{Necessità}:
             \begin{itemize}
-                \item Innovazione
-                \item Ottimizzazione
-                \item Soddisfare i requisiti del cliente
-                \item Tempi brevi di rilascio
-                \item Accogliere le modifiche rapidamente
-                \item Riuso del software
-                \item Riduzione degli errori
-                \item ...
+                \item Innovazione continua
+                \item Ottimizzazione processo
+                \item Rilasci frequenti
+                \item Alta qualità
             \end{itemize}
             
         \end{column}
         \begin{column}{0.5\textwidth}
         
-            \textbf{Soluzione}:
-            \begin{itemize}
-                \item DevOps
-                \item Applicazioni Multipiattaforma
-            \end{itemize}
-            
-        \end{column}
-    \end{columns}    
-    
-    \vspace{5mm}
-    
-    \textbf{Obiettivo}: Dimostrare l'efficacia della cultura DevOps e del paradigma multipiattaforma, adottati per lo sviluppo di applicazioni mobile
-\end{frame}
-
-\begin{frame}{DevOps}
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.45\textwidth}
-        
-            \textbf{Principi}:
-            \begin{itemize}
-                \item Comunicazione/Collaborazione
-                \item Automazione
-                \item Monitoraggio
-            \end{itemize}
-            
-            \vspace{3mm}
-            
-            \textbf{Vantaggi}:
-            \begin{itemize}
-                \item Risparmio di tempo e risorse
-                \item Tempi di consegna minori
-                \item Maggiore qualità
-            \end{itemize}
-            
-            \vspace{3mm}
-            
-            \textbf{Tecniche}:
-            \begin{itemize}
-                \item Continuous Integration
-                \item Continuous Delivery
-                \item Continuous Inspection
-                \item ...
-            \end{itemize}
-            
-        \end{column}
-        \begin{column}{0.55\textwidth}
-        
-             \begin{figure}[H]
-                \includegraphics[width=1\textwidth]{img/Devops-toolchain.png}
+            \begin{figure}[H]
+                \includegraphics[width=1\textwidth]{img/Untitled design.png}
             \end{figure}
             
         \end{column}
     \end{columns}
 \end{frame}
 
-\begin{frame}{Applicazioni Multipiattaforma}
+\begin{frame}{Problema}
 
-    \textbf{Cross-piattaforma}:
+    \textbf{Metodo tradizionale}:
     \begin{itemize}
-        \item Condivisione/riuso totale del codice
-        \item Performance limitate dovute alla presenza di uno strato software aggiuntivo di traduzione del codice
-        \item Accesso limitato e con overhead alle funzionalità hardware del dispositivo dovuto alla presenza dello strato software aggiuntivo
-        \item Frameworks: Ionic, Flutter, React Native, ...
+        \item Stessa applicazione sviluppata due volte
+        \item Due team separati
+        \item Stesso processo con tecnologie differenti
+        \item Comunicazione/collaborazione tra i team
+        \item Task manuali
+        \item ...
     \end{itemize}
-    
-    \vspace{5mm}
-    
-    \textbf{Multi-piattaforma}:
-    \begin{itemize}
-        \item Condivisione/riuso della logica applicativa
-        \item Performance elevate, equivalenti a quelle native
-        \item Accesso completo e senza overhead alle funzionalità hardware del dispositivo
-        \item Frameworks: \textbf{Kotlin Multiplatform Mobile}
-    \end{itemize}
+
+    \vspace{9mm}
+
+    \begin{figure}[H]
+        \includegraphics[width=0.7\textwidth]{img/Screenshot 2022-12-05 at 18.01.36.png}
+    \end{figure}
     
 \end{frame}
 
-\begin{frame}{Kotlin Multiplatform Mobile}
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.55\textwidth}
-        
-             \begin{figure}[H]
-                \includegraphics[width=1\textwidth]{img/kmm-stack-official.png}
-            \end{figure}
-            
-        \end{column}
+\begin{frame}{Soluzione}
+    \begin{columns}[onlytextwidth,t]
         \begin{column}{0.45\textwidth}
-        
-            \textbf{Caratteristiche}:
+    
+            \textbf{Cultura DevOps}:
             \begin{itemize}
-                \item Framework per lo sviluppo di applicazioni mobile multipiattaforma per Android e iOS
-                \item Ancora non molto maturo (fase ``pre-stable'')
-                \item Utilizzato in produzione da aziende come Netflix, Philips e VMware
-                \item Il codice condiviso viene compilato in binari eseguibili direttamente dal dispositivo senza il bisogno di strati software aggiuntivi
+                \item Automazione
+                \item Collaborazione
+                \item Misurazione
+                \item Monitoraggio
+            \end{itemize}
+
+            \vspace{4mm}
+        
+            \textbf{Applicazioni\\Multipiattaforma}:
+            \begin{itemize}
+                \item Riuso del codice
+                \item Risparmio costi/risorse
+                \item Manutenzione semplificata
+                \item Alte performance
             \end{itemize}
             
+        \end{column}
+        \begin{column}{0.55\textwidth}
+
+            \begin{figure}[H]
+                \includegraphics[width=1\textwidth]{img/devops-mobile.png}
+            \end{figure}
+        
         \end{column}
     \end{columns}
 \end{frame}
