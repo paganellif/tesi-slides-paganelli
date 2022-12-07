@@ -12,7 +12,7 @@
 
 \begin{frame}{Pratiche DevOps}
     \begin{columns}[onlytextwidth,t]
-        \begin{column}{0.33\textwidth}
+        \begin{column}{0.45\textwidth}
     
             \textbf{Continuous Integration}
             \vspace{2mm}
@@ -28,33 +28,18 @@
             \end{itemize}
             
         \end{column}
-        \begin{column}{0.33\textwidth}
+        \begin{column}{0.45\textwidth}
 
             \textbf{Continuous Delivery}:
             \vspace{2mm}
             \begin{itemize}
-                \item \textbf{Principio}: Rilascio frequente di piccole modifiche, eseguito in modo automatico \newline
+                \item \textbf{Principio}: Rilascio frequente di piccole modifiche, eseguito in modo automatico
                 \vspace{2mm}
                 \item \textbf{Stages}:
                 \begin{itemize}
                     \item Release alpha
                     \item Release beta
                     \item Release prod
-                \end{itemize}
-            \end{itemize}
-        
-        \end{column}
-        \begin{column}{0.33\textwidth}
-
-            \textbf{Continuous Inspection}
-            \vspace{2mm}
-            \begin{itemize}
-                \item \textbf{Principio}: Analisi automatica del codice per garantire un certo livello di qualità e di sicurezza
-                \vspace{2mm}
-                \item \textbf{Stages}:
-                \begin{itemize}
-                    \item Analisi statica
-                    \item Analisi dipendenze
                 \end{itemize}
             \end{itemize}
         
@@ -70,42 +55,17 @@
 \end{frame}
 
 \begin{frame}{Flusso di Lavoro}
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.95\textwidth}
-        
-            \begin{figure}[H]
-                \includegraphics[width=0.85\textwidth]{img/branching-model.png}
-            \end{figure}
-            
-        \end{column}
-        \begin{column}{0.05\textwidth}
-        \end{column}
-    \end{columns}
-    
-    \vspace{3mm}
-    
-    \begin{columns}[onlytextwidth]
-        \begin{column}{0.4\textwidth}
-        
-            \textbf{Branch principali}:
-            \begin{itemize}
-                \item dev
-                \item test
-                \item main
-            \end{itemize}
-            
-        \end{column}
-        \begin{column}{0.4\textwidth}
-        
-            \textbf{Ambienti}:
-            \begin{itemize}
-                \item Testing interno (alpha)
-                \item Testing esterno (beta)
-                \item Produzione (prod)
-            \end{itemize}
-            
-        \end{column}
-    \end{columns}
+    \begin{figure}[H]
+        \includegraphics[width=0.9\textwidth]{img/branching-model.png}
+    \end{figure}
+
+    \textbf{Caratteristiche}:
+    \begin{itemize}
+        \item 3 branch principali (dev, test, main)
+        \item 3 ``ambienti'' associati (alpha, beta, prod)
+        \item Riutilizzabile (Template)
+        \item Estendibile (Pipeline-as-Code)
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Sistema Complessivo}
@@ -113,5 +73,5 @@
     \begin{figure}[H]
         \includegraphics[width=0.85\textwidth]{img/full-cicd.png}
     \end{figure}
-    
+
 \end{frame}
