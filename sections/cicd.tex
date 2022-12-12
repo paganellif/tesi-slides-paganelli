@@ -3,14 +3,11 @@
 \section{Automazione del Processo di Sviluppo}
 
 \begin{frame}{Pratiche DevOps}
-    \begin{columns}[onlytextwidth,t]
+    \begin{columns}[onlytextwidth]
         \begin{column}{0.45\textwidth}
     
             \textbf{Continuous Integration}
-            \vspace{2mm}
             \begin{itemize}
-                \item \textbf{Principio}: Integrazione frequente di piccole modifiche, testate automaticamente
-                \vspace{2mm}
                 \item \textbf{Stages}:
                 \begin{itemize}
                     \item Build
@@ -18,21 +15,28 @@
                     \item Package
                 \end{itemize}
             \end{itemize}
-            
-        \end{column}
-        \begin{column}{0.45\textwidth}
+
+            \vspace{4mm}
 
             \textbf{Continuous Delivery}:
-            \vspace{2mm}
             \begin{itemize}
-                \item \textbf{Principio}: Rilascio frequente di piccole modifiche, eseguito in modo automatico
-                \vspace{2mm}
                 \item \textbf{Stages}:
                 \begin{itemize}
                     \item Release alpha
                     \item Release beta
                     \item Release prod
                 \end{itemize}
+            \end{itemize}
+            
+        \end{column}
+        \begin{column}{0.45\textwidth}
+
+            \textbf{Obiettivo}:
+            \begin{itemize}
+                \item Dalla modifica al rilascio nel minor tempo possibile
+                \item Verifica delle modifiche
+                \item Riuso (Template)
+                \item Estensione (Pipeline-as-Code)
             \end{itemize}
         
         \end{column}
@@ -43,21 +47,7 @@
     \begin{figure}[H]
         \includegraphics[width=0.9\textwidth]{img/cicd.png}
     \end{figure}
-
-\end{frame}
-
-\begin{frame}{Flusso di Lavoro}
-    \begin{figure}[H]
-        \includegraphics[width=0.8\textwidth]{img/release-flow.png}
-    \end{figure}
-
-    \textbf{Caratteristiche}:
-    \begin{itemize}
-        \item 3 branch principali (dev, test, main)
-        \item 3 ``ambienti'' associati (alpha, beta, prod)
-        \item Riutilizzabile (Template)
-        \item Estendibile (Pipeline-as-Code)
-    \end{itemize}
+    
 \end{frame}
 
 \begin{frame}{Sistema Complessivo}
